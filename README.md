@@ -26,9 +26,11 @@ Pastikan Anda telah menginstal *library* berikut di Arduino IDE:
 
 
 **Pada File Arduino (`.ino`)**
-Temukan baris berikut di awal kode dan ganti yang ada pada file Meter Air Portable dengan ESP32.docs:
+Temukan baris berikut di awal kode dan ganti yang ada pada file "Meter Air Portable dengan ESP32.docs":
 ```cpp
 #define WIFI_SSID "NAMA_WIFI"
 #define WIFI_PASSWORD "PASSWORD_WIFI"
 #define API_KEY "API_KEY_FIREBASE"
 #define DATABASE_URL "URL_DATABASE_FIREBASE"
+
+Lokasi File "Meter Air Portable dengan ESP32.docs":Pelatihan Non Aparatur Perdagangan 2026 > 0.Sistem Informasi Pelatihan 2026 > sertifikat_khairul > Meter_Air_Portable_ESP32 > Meter Air dengan ESP32.doc
