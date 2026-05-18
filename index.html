@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontrol Meter Air</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="statusKoneksi" class="status-koneksi">MENCARI KONEKSI...</div>
+
+<div class="container">
+  <h2>Meter Air Portable 🚰</h2>
+
+  <div class="card">
+    <label for="inputTarget">Masukkan Target (Liter):</label>
+    <input type="number" id="inputTarget" value="0" min="1" step="0.5">
+    
+    <button id="btnKirim" class="btn-primary">ALIRKAN AIR</button>
+    <button id="btnManual" class="btn-manual">BUKA MANUAL</button>
+  </div>
+
+  <div class="card">
+    <div class="status-valve-box">
+      <span>Status Valve:</span>
+      <strong id="valValve">TERTUTUP</strong>
+    </div>
+    
+    <div class="sensor-grid">
+      <div class="sensor-item">
+        <p>Volume Mengalir</p>
+        <div class="big-number text-green" id="valVolume">0.0 L</div>
+      </div>
+      
+      <div class="sensor-item">
+        <p>Debit Air</p>
+        <div class="big-number text-blue" id="valDebit">0.00 L/min</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
