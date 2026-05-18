@@ -1,0 +1,173 @@
+:root {
+  --bg-color: #e0e5ec; 
+  --shadow-light: rgba(255, 255, 255, 0.7);
+  --shadow-dark: rgba(163, 177, 198, 0.6);
+  --text-main: #4a5568;
+  --text-blue: #3182ce;
+  --text-green: #38a169;
+  --text-yellow: #d69e2e;
+  --text-red: #e53e3e;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 60px 15px 30px 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: var(--text-main);
+  text-shadow: 2px 2px 4px var(--shadow-light);
+}
+
+.card {
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 9px 9px 16px var(--shadow-dark), 
+             -9px -9px 16px var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Kolom Input */
+input {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-main);
+  box-shadow: inset 6px 6px 10px 0 var(--shadow-dark),
+              inset -6px -6px 10px 0 var(--shadow-light);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*Tombol Fisik */
+button {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px var(--shadow-dark), 
+             -6px -6px 12px var(--shadow-light);
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Efek saat tombol ditekan */
+button:active {
+  box-shadow: inset 4px 4px 8px var(--shadow-dark),
+              inset -4px -4px 8px var(--shadow-light);
+}
+
+button:disabled {
+  color: #a0aec0;
+  cursor: not-allowed;
+  box-shadow: inset 2px 2px 5px var(--shadow-dark),
+              inset -2px -2px 5px var(--shadow-light);
+}
+
+/* Warna Teks Tombol */
+.btn-primary { color: var(--text-blue); }
+.btn-manual { color: var(--text-yellow); }
+.btn-stop { color: var(--text-red); }
+
+/* Area Monitor */
+.status-valve-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(163, 177, 198, 0.2);
+}
+
+.sensor-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.sensor-item {
+  flex: 1;
+  text-align: center;
+  padding: 15px 5px;
+  border-radius: 15px;
+  box-shadow: inset 4px 4px 8px var(--shadow-dark),
+              inset -4px -4px 8px var(--shadow-light);
+}
+
+.sensor-item p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.big-number {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.text-green { color: var(--text-green); }
+.text-blue { color: var(--text-blue); }
+
+/* Indikator Offline/Online*/
+.status-koneksi { 
+  position: fixed; 
+  top: 15px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  padding: 8px 20px; 
+  border-radius: 20px; 
+  font-size: 12px;
+  font-weight: bold; 
+  color: white; 
+  background-color: var(--text-red); 
+  box-shadow: 3px 3px 6px var(--shadow-dark); 
+  transition: 0.3s; 
+  z-index: 1000;
+}
+
+.online { 
+  background-color: var(--text-green); 
+}
