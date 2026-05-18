@@ -7,10 +7,10 @@
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
 
-#define WIFI_SSID "Ada di Gdrive"
-#define WIFI_PASSWORD "Ada di Gdrive"
-#define API_KEY "Ada di Gdrive"
-#define DATABASE_URL "Ada di Gdrive"
+#define WIFI_SSID "NAMA_WIFI"
+#define WIFI_PASSWORD "PASSWORD_WIFI"
+#define API_KEY "API_KEY_FIREBASE"
+#define DATABASE_URL "URL_DATABASE_FIREBASE"
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
